@@ -52,7 +52,7 @@ app.component('app-navbar',{
   `,
   data() {
     return{
-      brand: 'images/logo.jpg',
+      brand: 'images/logo.svg',
       nav: [
         {
           link: 'index.html',  

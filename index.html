@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -15,6 +15,14 @@
     <app-navbar></app-navbar>
     <main class="container">
       <hr class="ribbon">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img class="d-flex w-100" src="images/banner-1.svg" alt="logo">
+        </div>
+        <div class="col-12 col-md-6">
+          <img class="d-flex w-100" src="images/banner-2.svg" alt="llamanos">
+        </div>
+      </div>
       <h1>Veterinaria Cat Lover</h1>
       <app-carousel :carousel="carousel"></app-carousel>
       <h2>Grooming</h2>
@@ -45,15 +53,15 @@
         id: 'second',
         items: [
           {
-            image: 'images/gato1.jpg',
+            image: 'images/gato4.jpg',
             label: 'Radiología digital'
           },
           {
-            image: 'images/gato2.jpg',
+            image: 'images/gato5.jpg',
             label: 'Ecografías'
           },
           {
-            image: 'images/gato3.jpg',
+            image: 'images/gato6.jpg',
             label: 'Laboratorio'
           }
         ]
