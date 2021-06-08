@@ -19,15 +19,15 @@
       <div class="row">        
         <div class="row col-12 col-md-8">
           <article>
-            <a :href="featured.link"><img class="d-flex w-100" :src="featured.image" :alt="featured.title"></a>
-            <p class="fw-light fst-italic">{{ featured.date }}</p>
+            <a :href="featured.link"><img class="d-flex w-100" :src="featured.image" :alt="featured.title"></a>            
             <a :href="featured.link" class="text-decoration-none"><h3 class="text-dark">{{ featured.title }}</h3></a>
+            <p class="fw-light fst-italic">{{ featured.date }}</p>
             <p>{{ featured.body }}</p>
           </article>
           <article class="col-12 col-md-6" v-for="item in posts">
             <a :href="item.link"><img class="d-flex w-100" :src="item.image" :alt="item.title"></a>
-            <p class="fw-light fst-italic">{{ item.date }}</p>
             <a :href="item.link" class="text-decoration-none"><h3 class="text-dark">{{ item.title }}</h3></a>
+            <p class="fw-light fst-italic">{{ item.date }}</p>
             <p>{{ item.body }}</p>
           </article>
         </div>

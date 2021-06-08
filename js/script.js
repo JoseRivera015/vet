@@ -10,7 +10,8 @@ app.component('app-news',{
     <h3 class="mb-3">Novedades</h3>
     <ul>
       <li v-for="item in news" class="mb-3">
-        <a class="text-light text-decoration-none" :href="location(item.link)">{{ item.text }}</a>
+        <a class="text-light text-decoration-none" :href="location(item.link)">{{ item.text }}</a><br>
+        <p class="fw-light fst-italic">{{ item.date }}</p>
       </li>
     </ul>
   </aside>
@@ -20,10 +21,12 @@ app.component('app-news',{
       news: [
         {
           text: 'CÓMO CORTAR LAS UÑAS DE TU GATO',
+          date: 'Publicado 8 de Junio, 2021',
           link: 'blog/como-cortar-uñas-gato.html'   
         },
         {
           text: 'REVISIONES SEMANALES DE TU GATO',
+          date: 'Publicado 8 de Junio, 2021',
           link: 'blog/revisiones-semanales-de-tu-gato.html'   
         }
       ]
