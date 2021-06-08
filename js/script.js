@@ -6,7 +6,7 @@ const rootComponent = {
 const app = Vue.createApp(rootComponent)
 app.component('app-news',{
   template: `
-  <aside class="bg-dark text-light p-3">
+  <aside class="bg-dark text-light p-3 mb-3">
     <h3 class="mb-3">Novedades</h3>
     <ul>
       <li v-for="item in news" class="mb-3">

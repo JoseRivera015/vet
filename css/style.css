@@ -35,3 +35,15 @@ footer a{
   color: hsl(27, 88%, 55%);
   text-decoration: none;
 }
+@media (min-width: 768px) {
+  .contact-left{
+    display: flex;
+    justify-content: end;
+    padding: 0;
+  }
+  .contact-right{
+    display: flex;
+    justify-content: start;
+    padding: 0;
+  }
+ }
