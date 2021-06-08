@@ -20,6 +20,9 @@
 .text-light{
   color: hsl(14, 54%, 90%) !important;
 }
+.text-primary{
+  color: hsl(27, 88%, 55%)!important;
+}
 body{
   background: hsl(14, 54%, 90%);
 }

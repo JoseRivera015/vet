@@ -4,6 +4,47 @@ const rootComponent = {
   }
 }
 const app = Vue.createApp(rootComponent)
+app.component('app-news',{
+  template: `
+  <aside class="bg-dark text-light p-3">
+    <h3 class="mb-3">Novedades</h3>
+    <ul>
+      <li v-for="item in news" class="mb-3">
+        <a class="text-light text-decoration-none" :href="location(item.link)">{{ item.text }}</a>
+      </li>
+    </ul>
+  </aside>
+  `,
+  data() {
+    return{
+      news: [
+        {
+          text: 'CÓMO CORTAR LAS UÑAS DE TU GATO',
+          link: 'blog/como-cortar-uñas-gato.html'   
+        },
+        {
+          text: 'REVISIONES SEMANALES DE TU GATO',
+          link: 'blog/revisiones-semanales-de-tu-gato.html'   
+        }
+      ]
+    }
+  },
+  methods: {
+    location(link) {
+      let prelink = '../'
+      let stringToCut = '/vet/'
+      let str =  window.location.pathname.slice(stringToCut.length)
+      for (count = 0, i = 0; i < str.length; i++) {
+        if (str[i] === '/')
+        count++
+      }
+      for (i = 0; i < count; i++) {
+        link = prelink + link
+      }
+      return link
+    }
+  }
+})
 app.component('app-carousel',{
   props: ['carousel'],
   template: `
@@ -35,7 +76,7 @@ app.component('app-navbar',{
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" :href="location(nav[0].link)">
-        <img :src="brand" alt="...">
+        <img :src="location(brand)" alt="...">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
