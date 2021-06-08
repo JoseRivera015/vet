@@ -81,7 +81,7 @@ app.component('app-navbar',{
   methods: {
     location(link) {
       let prelink = '../'
-      let stringToCut = '/'
+      let stringToCut = '/vet/'
       let str =  window.location.pathname.slice(stringToCut.length)
       for (count = 0, i = 0; i < str.length; i++) {
         if (str[i] === '/')
@@ -169,7 +169,7 @@ app.component('app-footer',{
   methods: {
     location(link) {
       let prelink = '../'
-      let stringToCut = '/'
+      let stringToCut = '/vet/'
       let str =  window.location.pathname.slice(stringToCut.length)
       for (count = 0, i = 0; i < str.length; i++) {
         if (str[i] === '/')
