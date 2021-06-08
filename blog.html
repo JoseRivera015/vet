@@ -16,25 +16,68 @@
     <main class="container">
       <hr class="ribbon">
       <h1>Blog</h1>
-      <div class="row">
-        <div class="col-6">
+      <div class="row">        
+        <div class="row col-12 col-md-8">
           <article>
-            <img :src="" alt="">
+            <a :href="featured.link"><img class="d-flex w-100" :src="featured.image" :alt="featured.title"></a>
+            <p class="featured.date"></p>
+            <a :href="featured.link" class="text-decoration-none"><h3>{{ featured.title }}</h3></a>
+            <p>{{ featured.body }}</p>
+          </article>
+          <article class="col-12 col-md-6" v-for="item in posts">
+            <a :href="item.link"><img class="d-flex w-100" :src="item.image" :alt="item.title"></a>
+            <p class="item.date"></p>
+            <a :href="item.link" class="text-decoration-none"><h3>{{ item.title }}</h3></a>
+            <p>{{ item.body }}</p>
           </article>
         </div>
+        <aside class="col-12 col-md-4">
+          <h3>Novedades</h3>
+        </aside>
       </div>
-      
     </main>
     <app-footer></app-footer>
   </div>
   <script>
     let blog = {
+      news:[
+
+      ],
+      featured: {
+        image: 'images/blog-images/imagen-esterlizacion.jpg',
+        date: '8 de Junio',
+        title: 'Tips para proteger a nuestras mascotas del calor',
+        body: '1. Agua limpia y fresca siempre: Esté donde esté, nuestra mascota debe tener a su disposición agua limpia y fresca en todo momento. 2. Ventilación en el hogar: Es importante que nuestra mascota...',  
+        link: ''      
+      },
       posts: [
         {
-          image: '',
-          date: '',
-          title: '',
-          body: ''
+          image: 'images/blog-images/imagen-esterlizacion.jpg',
+          date: '8 de Junio',
+          title: 'Tips para proteger a nuestras mascotas del calor',
+          body: '1. Agua limpia y fresca siempre: Esté donde esté, nuestra mascota debe tener a su disposición agua limpia y fresca en todo momento. 2. Ventilación en el hogar: Es importante que nuestra mascota...',
+          link: '#'
+        },
+        {
+          image: 'images/blog-images/imagen-esterlizacion.jpg',
+          date: '8 de Junio',
+          title: 'Tips para proteger a nuestras mascotas del calor',
+          body: '1. Agua limpia y fresca siempre: Esté donde esté, nuestra mascota debe tener a su disposición agua limpia y fresca en todo momento. 2. Ventilación en el hogar: Es importante que nuestra mascota...',
+          link: '#'
+        },
+        {
+          image: 'images/blog-images/imagen-esterlizacion.jpg',
+          date: '8 de Junio',
+          title: 'Tips para proteger a nuestras mascotas del calor',
+          body: '1. Agua limpia y fresca siempre: Esté donde esté, nuestra mascota debe tener a su disposición agua limpia y fresca en todo momento. 2. Ventilación en el hogar: Es importante que nuestra mascota...',
+          link: '#'
+        },
+        {
+          image: 'images/blog-images/imagen-esterlizacion.jpg',
+          date: '8 de Junio',
+          title: 'Tips para proteger a nuestras mascotas del calor',
+          body: '1. Agua limpia y fresca siempre: Esté donde esté, nuestra mascota debe tener a su disposición agua limpia y fresca en todo momento. 2. Ventilación en el hogar: Es importante que nuestra mascota...',
+          link: '#'
         }
       ]
     }

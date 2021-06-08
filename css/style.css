@@ -32,3 +32,8 @@ footer a{
   color: hsl(27, 88%, 55%);
   text-decoration: none;
 }
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    
+  }
+}

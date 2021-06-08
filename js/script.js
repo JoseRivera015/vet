@@ -41,9 +41,9 @@ app.component('app-navbar',{
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li v-for="item in nav" class="nav-item">
-            <a class="nav-link" :href="location(item.link)">{{ item.text }}</a>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li v-for="item in nav" class="nav-item me-5">
+            <a class="nav-link fs-5" :href="location(item.link)">{{ item.text }}</a>
           </li>
         </ul>      
       </div>
