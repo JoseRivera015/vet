@@ -15,7 +15,7 @@
     <app-navbar></app-navbar>
     <main class="container my-3">
       <hr class="ribbon">
-      <h1>Servicios</h1>
+      <h1 class="text-dark">Servicios</h1>
       <div class="accordion" id="accordionExample">
         <div v-for="(item, index) in list" class="accordion-item border-secondary">
           <h2 class="accordion-header" :id="'heading'+index">
@@ -26,7 +26,7 @@
           <div :id="'collapse'+index" class="accordion-collapse collapse" :aria-labelledby="'heading'+index" data-bs-parent="#accordionExample">
             <div class="accordion-body row">
               <div class="col-12 col-md-3">
-                <img class="d-flex w-100" :src="item.image" alt="item.title">
+                <img class="d-flex w-100 mb-2" :src="item.image" alt="item.title">
               </div>
               <div class="col-12 col-md-9">
                 <p>{{ item.body }}</p>

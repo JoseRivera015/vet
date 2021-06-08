@@ -10,7 +10,7 @@ app.component('app-news',{
     <h3 class="mb-3">Novedades</h3>
     <ul>
       <li v-for="item in news" class="mb-3">
-        <a class="text-light text-decoration-none" :href="location(item.link)">{{ item.text }}</a><br>
+        <a class="text-primary text-decoration-none" :href="location(item.link)">{{ item.text }}</a><br>
         <p class="fw-light fst-italic">{{ item.date }}</p>
       </li>
     </ul>
