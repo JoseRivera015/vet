@@ -17,8 +17,8 @@
 .text-dark{
   color: hsl(14, 54%, 20%) !important;
 }
-main h1, main h2, main h3{
-  color: hsl(14, 54%, 20%);
+.text-light{
+  color: hsl(14, 54%, 90%) !important;
 }
 body{
   background: hsl(14, 54%, 90%);
@@ -31,9 +31,4 @@ body{
 footer a{
   color: hsl(27, 88%, 55%);
   text-decoration: none;
-}
-@media (min-width: 992px) {
-  .navbar-nav .nav-link {
-    
-  }
 }
