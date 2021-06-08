@@ -1,0 +1,27 @@
+.navbar{
+  box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
+}
+.navbar-brand {
+  padding: 0;
+}
+.navbar .navbar-brand img{
+  max-height: 40px;
+}
+.navbar.bg-dark, footer.bg-dark{
+  background-color: hsl(14, 54%, 20%) !important;
+}
+main h1, main h2, main h3{
+  color: hsl(14, 54%, 20%);
+}
+body{
+  background: hsl(14, 54%, 90%);
+}
+.ribbon{
+  border-top: 10px dotted hsl(14, 54%, 20%);
+  opacity: initial;
+  background: none;
+}
+footer a{
+  color: hsl(27, 88%, 55%);
+  text-decoration: none;
+}
