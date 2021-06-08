@@ -7,23 +7,23 @@ const app = Vue.createApp(rootComponent)
 app.component('app-carousel',{
   props: ['carousel'],
   template: `
-    <div id="carouselExampleCaptions" class="carousel slide mb-3" data-bs-ride="carousel">
+    <div :id="carousel.id" class="carousel slide mb-3" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button v-for="(item, index) in carousel" type="button" data-bs-target="#carouselExampleCaptions" :data-bs-slide-to="index" :class="{active: index === 0}" aria-current="index === 0 ? true: false" :aria-label="'Slide ' + index"></button>
+        <button v-for="(item, index) in carousel.items" type="button" :data-bs-target="'#'+carousel.id" :data-bs-slide-to="index" :class="{active: index === 0}" aria-current="index === 0 ? true: false" :aria-label="'Slide ' + index"></button>
       </div>
       <div class="carousel-inner">
-        <div v-for="(item, index) in carousel" class="carousel-item" :class="{active: index === 0}">
+        <div v-for="(item, index) in carousel.items" class="carousel-item" :class="{active: index === 0}">
           <img :src="item.image" class="d-block w-100" :alt="item.label" >
           <div class="carousel-caption d-none d-md-block">
             <h5> {{item.label}} </h5>
           </div>
         </div>     
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" :data-bs-target="'#'+carousel.id" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" :data-bs-target="'#'+carousel.id" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -109,9 +109,9 @@ app.component('app-footer',{
         </div>
         <div class="col-12 col-md-4">
           <h3>Enlaces de interés</h3>
-          <div v-for="item in nav">
-            <a :href="location(item.link)">{{ item.text }}</a>
-          </div>
+          <ul>
+            <li v-for="item in nav"><a :href="location(item.link)">{{ item.text }}</a></li>
+          </ul>
         </div>
 
         <div class="col-12 col-md-4">
@@ -160,8 +160,8 @@ app.component('app-footer',{
           link: 'www.facebook.com'
         },
         {
-          icon: 'bi bi-facebook',
-          link: 'www.facebook.com'
+          icon: 'bi bi-youtube',
+          link: 'www.youtube.com'
         }
       ]
     }

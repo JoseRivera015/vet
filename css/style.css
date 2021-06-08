@@ -7,8 +7,15 @@
 .navbar .navbar-brand img{
   max-height: 40px;
 }
-.navbar.bg-dark, footer.bg-dark{
+.bg-dark{
   background-color: hsl(14, 54%, 20%) !important;
+}
+.bg-light {
+  background-color: hsl(14, 54%, 90%) !important;
+}
+
+.text-dark{
+  color: hsl(14, 54%, 20%) !important;
 }
 main h1, main h2, main h3{
   color: hsl(14, 54%, 20%);

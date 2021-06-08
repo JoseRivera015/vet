@@ -8,58 +8,33 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Veterinaria Cat Lover</title>
+  <title>Nosotros - Veterinaria Cat Lover</title>
 </head>
 <body>
   <div id="app">
     <app-navbar></app-navbar>
     <main class="container">
       <hr class="ribbon">
-      <h1>Veterinaria Cat Lover</h1>
-      <app-carousel :carousel="carousel"></app-carousel>
-      <h2>Grooming</h2>
-      <app-carousel :carousel="grooming"></app-carousel>
+      <h1>Historia</h1>
+      <h2>MISIÓN</h2>
+      <p>Ofrecer un servicio profesional especializado e integral que cubra las necesidades de las mascotas y propietarios, contribuyendo de esta manera al bienestar holístico en ambientes confortables y brindando productos con los más altos estándares de calidad.</p>
+      <h2>VISIÓN</h2>
+      <p>Ser referente en la Medicina Veterinaria Nacional en el mediano plazo, e internacional en el largo plazo, expandiendo horizontes en lo que se refiere a capacidad profesional, infraestructura especializada y equipamiento de última generación.</p>
+      <h2>VALORES</h2>
+      <ul>
+        <li>Amor a los animales</li>
+        <li>Honestidad</li>
+        <li>Eficiencia</li>
+        <li>Profesionalismo</li>
+        <li>Respeto</li>
+        <li>Sentido de Pertenencia</li>
+      </ul>
     </main>
     <app-footer></app-footer>
   </div>
   <script>
-    let home = {
-      carousel: {
-        id: 'first',
-        items: [
-          {
-            image: 'images/gato1.jpg',
-            label: 'Radiología digital'
-          },
-          {
-            image: 'images/gato2.jpg',
-            label: 'Ecografías'
-          },
-          {
-            image: 'images/gato3.jpg',
-            label: 'Laboratorio'
-          }
-        ]
-      },
-      grooming: {
-        id: 'second',
-        items: [
-          {
-            image: 'images/gato1.jpg',
-            label: 'Radiología digital'
-          },
-          {
-            image: 'images/gato2.jpg',
-            label: 'Ecografías'
-          },
-          {
-            image: 'images/gato3.jpg',
-            label: 'Laboratorio'
-          }
-        ]
-      }
-    }
-    let root = home
+    let about = {}
+    let root = about
   </script>
   <script src="js/script.js"></script>
 </body>
