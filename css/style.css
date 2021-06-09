@@ -39,6 +39,21 @@ footer a{
   color: hsl(27, 88%, 55%);
   text-decoration: none;
 }
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+}
 @media (min-width: 768px) {
   .contact-left{
     display: flex;
