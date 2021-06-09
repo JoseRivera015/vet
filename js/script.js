@@ -6,7 +6,7 @@ const rootComponent = {
 const app = Vue.createApp(rootComponent)
 app.component('app-news',{
   template: `
-  <aside class="bg-dark text-light p-3 mb-3">
+  <aside class="bg-dark text-light p-3 mb-3 rounded">
     <h3 class="mb-3">Novedades</h3>
     <ul>
       <li v-for="item in news" class="mb-3">
@@ -164,7 +164,7 @@ app.component('app-footer',{
             <a href="mailto:contacto@catlover.com">contacto@catlover.com</a>
           </div>
           <div class="my-2">
-            <a v-for="item in contactIcons" class="btn btn-outline-light me-2" :href="item.link" role="button">
+            <a v-for="item in contactIcons" class="btn btn-outline-primary me-2" :href="item.link" role="button">
               <i :class="item.icon"></i>
             </a>
           </div>
