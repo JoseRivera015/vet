@@ -20,33 +20,29 @@
   background-color: var(--clr-primary-900) !important;
 }
 .bg-light {
-  background-color: var(--clr-primary-200) !important;
+  background-color: var(--clr-primary-100) !important;
 }
 
 .text-dark{
-  color: hsl(14, 54%, 20%) !important;
+  color: var(--clr-primary-900) !important;
 }
 .text-light{
-  color: hsl(14, 54%, 90%) !important;
+  color: var(--clr-primary-100) !important;
 }
 .text-primary{
-  color: hsl(27, 88%, 55%)!important;
+  color: var(--clr-primary-500) !important;
 }
 .btn-outline-primary{
-  color: hsl(27, 88%, 55%)!important;
-  border-color: hsl(27, 88%, 55%)!important;
+  color: var(--clr-primary-500) !important;
+  border-color: var(--clr-primary-500) !important;
 }
 body{
   background: var(--clr-primary-100);
 }
 .ribbon{
-  border-top: 10px dotted hsl(14, 54%, 20%);
+  border-top: 10px dotted var(--clr-primary-900);
   opacity: initial;
   background: none;
-}
-footer a{
-  color: hsl(27, 88%, 55%);
-  text-decoration: none;
 }
 .contact-box{
   margin: auto;

@@ -59,7 +59,7 @@ app.component('app-carousel',{
         <div v-for="(item, index) in carousel.items" class="carousel-item" :class="{active: index === 0}">
           <img :src="item.image" class="d-block w-100" :alt="item.label" >
           <div class="carousel-caption d-none d-md-block">
-            <h5> {{item.label}} </h5>
+            <h5 style="text-shadow: 1px 1px 2px black;"> {{item.label}} </h5>
           </div>
         </div>     
       </div>
@@ -154,14 +154,14 @@ app.component('app-footer',{
         <div class="col-12 col-md-4">
           <h3>Enlaces de interés</h3>
           <ul>
-            <li v-for="item in nav"><a :href="location(item.link)">{{ item.text }}</a></li>
+            <li v-for="item in nav"><a class="text-primary text-decoration-none" :href="location(item.link)">{{ item.text }}</a></li>
           </ul>
         </div>
 
         <div class="col-12 col-md-4">
           <h3>Escríbenos a:</h3>
           <div >
-            <a href="mailto:contacto@catlover.com">contacto@catlover.com</a>
+            <a class="text-primary text-decoration-none" href="mailto:contacto@catlover.com">contacto@catlover.com</a>
           </div>
           <div class="my-2">
             <a v-for="item in contactIcons" class="btn btn-outline-primary me-2" :href="item.link" role="button">
