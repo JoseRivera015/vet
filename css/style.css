@@ -1,16 +1,11 @@
 :root {
-  --primary-hs: 14 54%;
-  --secondary-hs: 27 88%;
+  --primary-hs: 28 86%;
   
+  --clr-primary-100: hsl(var(--primary-hs) 90%); 
   --clr-primary-200: hsl(var(--primary-hs) 80%);
-  --clr-primary-500: hsl(var(--primary-hs) 50%);
+  --clr-primary-500: hsl(var(--primary-hs) 53%);
   --clr-primary-800: hsl(var(--primary-hs) 20%);
-  
-  --clr-secondary-100: hsl(var(--secondary-hs) 90%); 
-  --clr-secondary-200: hsl(var(--secondary-hs) 80%);
-  --clr-secondary-500: hsl(var(--secondary-hs) 50%);
-  --clr-secondary-800: hsl(var(--secondary-hs) 20%);
-  
+  --clr-primary-900: hsl(var(--primary-hs) 10%);
 }
 .navbar{
   box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
@@ -22,10 +17,10 @@
   max-height: 40px;
 }
 .bg-dark{
-  background-color: var(--clr-secondary-800) !important;
+  background-color: var(--clr-primary-900) !important;
 }
 .bg-light {
-  background-color: var(--clr-secondary-200) !important;
+  background-color: var(--clr-primary-200) !important;
 }
 
 .text-dark{
@@ -42,7 +37,7 @@
   border-color: hsl(27, 88%, 55%)!important;
 }
 body{
-  background: var(--clr-secondary-100);
+  background: var(--clr-primary-100);
 }
 .ribbon{
   border-top: 10px dotted hsl(14, 54%, 20%);
