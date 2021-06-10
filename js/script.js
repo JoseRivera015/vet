@@ -146,9 +146,9 @@ app.component('app-footer',{
         <div class="col-12 col-md-4">
           <h3>Clinica Veterinaria Cat Lover</h3>
           <ul>
-            <li>Clínica: 458-4418</li>
+            <li>Clínica: 555-6767</li>
             <li>Whatsapp: 936-186-049</li>
-            <li>Calle Los Huertos 129 Urb Flores de Lima - San Juan de Lurigancho (Frente a Metro)</li>  
+            <li>Av. Antunez de Mayolo crda 16, cruce con Av. Universitaria, Luis Alva N° 14 - Los Olivos</li>  
           </ul>
         </div>
         <div class="col-12 col-md-4">
