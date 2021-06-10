@@ -39,6 +39,9 @@ footer a{
   color: hsl(27, 88%, 55%);
   text-decoration: none;
 }
+.contact-box{
+  margin: auto;
+}
 /*.map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -64,5 +67,8 @@ footer a{
     display: flex;
     justify-content: start;
     padding: 0;
+  }
+  .contact-box{
+    margin: 0;
   }
  }
